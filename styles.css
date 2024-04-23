@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0c1c39;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/aa/Lg-noticias-dia-de-gra-mio--de-abertura-da-arquibancada-e-de-fazer-a-arena-inteira-cantar-com-a-norte-32701.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0055aa;
+}
+
+.catalog {
+  max-width: 890px;
+  margin: 50px auto;
+  background-color: rgba(12, 28, 57, 0.8);
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-item {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-item:hover img {
+  transform: scale(1.1);
+}
+
+.modal-content {
+  overflow: hidden;
+  background-color: rgba(12, 28, 57, 0.8);
+  color: #fff;
+}
+
+.modal-body {
+  max-height: 80vh;
+}
+
+#addButton {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  font-size: 18px;
+  background-color: #0055aa;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#addButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+#addButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 85, 170, 0.5);
+}
+
+.text-primary {
+  color: #0055aa !important;
+}
